@@ -1,0 +1,180 @@
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    margin: 0;
+    background-image: url("../images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+.myGrid{
+    display: grid;
+    grid-template-columns: repeat(12, 8.33%);
+    grid-template-rows: auto auto auto;
+}
+
+.testimonialImage{
+    grid-column: 2 / 12;
+    grid-row: 1 / 2;
+    background-image: url("../images/pattern-bg.svg");
+    background-size: 100% 100%;
+    position: relative;
+    margin: 5% 0; 
+}
+
+.testimonialBg{
+    width: 100%;
+}
+
+.authorPhoto{
+    width: 80%;
+    margin: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.buttonDeck{
+    position: absolute;
+    left: 120px;
+    bottom: 2px;
+    padding: 3% 5%;
+    border-radius: 40px;
+    background-color: #ffffff;
+    width: 52px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -16px 13px 30px hsl(240, 18%, 77%);;
+}
+
+.buttonDeck img{
+    height: 12px;
+    cursor: pointer;
+}
+
+.testimonialContainer{
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+    text-align: center;
+    background: url("../images/pattern-quotes.svg") top center no-repeat;
+    background-size: 20%;
+}
+
+.testimonialText{
+    margin: 9% 4% 4%;
+    font-size: 0.53em;/*17px*/
+    font-weight: 300;
+}
+
+.authorContainer{
+    font-size: 0.437em;/*14px*/
+}
+
+.authorName{
+    font-weight: 700;
+}
+
+.authorProfession{
+    color: hsl(240, 18%, 77%);
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+/* Footer */
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    grid-column: 2 / 12;
+    grid-row: 3 / 4;
+    margin-top: 30%;
+}
+    
+.attribution a {
+    color: hsl(240, 38%, 20%);
+}
+
+.colors{
+    color: hsl(240, 38%, 20%); /*Dark Blue*/
+    color: hsl(240, 18%, 77%); /*Grayish Blue*/
+}
+
+.efectoFadeOut{
+    animation: myAnimationOut 2s linear 0s 1 normal none;
+}
+
+.efectoFadeIn{
+    animation: myAnimationIn 2s linear 0s 1 normal none;
+}
+
+@keyframes myAnimationOut{
+    20% {
+        opacity: 80%;
+        transform: translateX(20px);
+    }
+
+    35% {
+        opacity: 65%;
+        transform: translateX(20px);
+    }
+
+    50% {
+        opacity: 50%;
+        transform: translateX(20px);
+    }
+
+    65% {
+        opacity: 35%;
+        transform: translateX(20px);
+    }
+
+    80% {
+         opacity: 20%;
+         transform: translateX(20px);
+    }
+    
+    100% {
+        opacity: 0%;
+        transform: translateX(20px);
+    }
+}
+
+@keyframes myAnimationIn{
+    0%{
+        opacity: 0%;
+        transform: translateX(-120px);
+    }
+    
+    20% {
+        opacity: 80%;
+        transform: translateX(20px);
+    }
+
+    35% {
+        opacity: 65%;
+        transform: translateX(20px);
+    }
+
+    50% {
+        opacity: 50%;
+        transform: translateX(20px);
+    }
+
+    65% {
+        opacity: 35%;
+        transform: translateX(20px);
+    }
+
+    80% {
+         opacity: 20%;
+         transform: translateX(20px);
+    }
+    
+    100% {
+        opacity: 0%;
+        transform: translateX(20px);
+    }
+}
