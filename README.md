@@ -6,4 +6,6 @@
 
 2.- HTML, CSS y JavaScript.
 
-2.- Cambio de imagenes con efecto FadeIn y FadeOut simultaneo.
+3.- Cambio de imagenes con efecto FadeIn y FadeOut simultaneo.
+
+4.- Los testimonios tambien cambian con los mismos efectos

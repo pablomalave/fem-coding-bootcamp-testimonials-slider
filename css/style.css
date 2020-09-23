@@ -90,91 +90,9 @@ body{
     text-align: center;
     grid-column: 2 / 12;
     grid-row: 3 / 4;
-    margin-top: 30%;
+    margin: 30% 0;
 }
     
 .attribution a {
     color: hsl(240, 38%, 20%);
-}
-
-.colors{
-    color: hsl(240, 38%, 20%); /*Dark Blue*/
-    color: hsl(240, 18%, 77%); /*Grayish Blue*/
-}
-
-.efectoFadeOut{
-    animation: myAnimationOut 2s linear 0s 1 normal none;
-}
-
-.efectoFadeIn{
-    animation: myAnimationIn 2s linear 0s 1 normal none;
-}
-
-@keyframes myAnimationOut{
-    20% {
-        opacity: 80%;
-        transform: translateX(20px);
-    }
-
-    35% {
-        opacity: 65%;
-        transform: translateX(20px);
-    }
-
-    50% {
-        opacity: 50%;
-        transform: translateX(20px);
-    }
-
-    65% {
-        opacity: 35%;
-        transform: translateX(20px);
-    }
-
-    80% {
-         opacity: 20%;
-         transform: translateX(20px);
-    }
-    
-    100% {
-        opacity: 0%;
-        transform: translateX(20px);
-    }
-}
-
-@keyframes myAnimationIn{
-    0%{
-        opacity: 0%;
-        transform: translateX(-120px);
-    }
-    
-    20% {
-        opacity: 80%;
-        transform: translateX(20px);
-    }
-
-    35% {
-        opacity: 65%;
-        transform: translateX(20px);
-    }
-
-    50% {
-        opacity: 50%;
-        transform: translateX(20px);
-    }
-
-    65% {
-        opacity: 35%;
-        transform: translateX(20px);
-    }
-
-    80% {
-         opacity: 20%;
-         transform: translateX(20px);
-    }
-    
-    100% {
-        opacity: 0%;
-        transform: translateX(20px);
-    }
 }
