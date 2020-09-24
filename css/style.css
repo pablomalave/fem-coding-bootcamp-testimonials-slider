@@ -11,12 +11,12 @@ body{
 .myGrid{
     display: grid;
     grid-template-columns: repeat(12, 8.33%);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
 }
 
 .testimonialImage{
     grid-column: 2 / 12;
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
     background-image: url("../images/pattern-bg.svg");
     background-size: 100% 100%;
     position: relative;
@@ -36,10 +36,11 @@ body{
 }
 
 .buttonDeck{
-    position: absolute;
-    left: 120px;
-    bottom: 2px;
-    padding: 3% 5%;
+    grid-column: 5 / 9;
+    grid-row: 2 / 3;
+    margin: 18% auto; 
+    z-index: 1;
+    padding: 5% 7%;
     border-radius: 40px;
     background-color: #ffffff;
     width: 52px;
@@ -55,7 +56,7 @@ body{
 
 .testimonialContainer{
     grid-column: 2 / 12;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     text-align: center;
     background: url("../images/pattern-quotes.svg") top center no-repeat;
     background-size: 20%;
@@ -89,10 +90,18 @@ body{
     font-size: 11px; 
     text-align: center;
     grid-column: 2 / 12;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     margin: 30% 0;
 }
     
 .attribution a {
     color: hsl(240, 38%, 20%);
+}
+
+
+/* Media Queries */
+@media (min-width: 576px){
+    body{
+        background-color: chocolate;
+    }
 }
